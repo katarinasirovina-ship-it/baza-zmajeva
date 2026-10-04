@@ -9,8 +9,8 @@ SCOPES = [
     "https://www.googleapis.com/auth/drive"
 ]
 
-credentials = Credentials.from_service_account_file(
-    "got-zmajevi-dbf47b56f9c3.json",
+credentials = Credentials.from_service_account_info(
+    dict(st.secrets["gcp_service_account"]),
     scopes=SCOPES
 )
 
