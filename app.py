@@ -140,7 +140,7 @@ if dodaj:
 
     st.success("Zmaj je uspješno dodan! 🐉")
 
-    st.subheader("🗑️ Obriši zmaja")
+st.subheader("🗑️ Obriši zmaja")
 
 zmaj_za_brisanje = st.selectbox(
     "Odaberi zmaja kojeg želiš obrisati:",
