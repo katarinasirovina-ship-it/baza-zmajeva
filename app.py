@@ -26,6 +26,14 @@ st.set_page_config(
     page_icon="🐉"
 )
 
+st.markdown("""
+<style>
+.stApp {
+    background: linear-gradient(135deg, #0f0f0f, #2b1b1b);
+    color: white;
+}
+</style>
+""", unsafe_allow_html=True)
 st.title("🐉 ZMAJEVI SVIJETA WESTEROSA")
 
 st.write("Dobrodošli u bazu zmajeva iz svijeta Westerosa!")
