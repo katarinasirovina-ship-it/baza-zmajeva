@@ -46,6 +46,8 @@ st.dataframe(df, use_container_width=True)
 
 st.subheader("🔎 Filtriranje zmajeva")
 
+pretraga = st.text_input("Pretraži zmaja po imenu:")
+
 odabrani_spol = st.selectbox(
     "Odaberi spol zmaja:",
     ["Svi", "Muški", "Ženski"]
@@ -55,6 +57,11 @@ if odabrani_spol == "Svi":
     filtrirani_podaci = df
 else:
     filtrirani_podaci = df[df["SPOL"] == odabrani_spol]
+
+if pretraga:
+    filtrirani_podaci = filtrirani_podaci[
+        filtrirani_podaci["IME"].str.contains(pretraga, case=False, na=False)
+    ]
 
 st.dataframe(filtrirani_podaci, use_container_width=True)
 
