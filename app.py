@@ -22,11 +22,11 @@ spreadsheet = client.open_by_key(SHEET_ID)
 worksheet = spreadsheet.sheet1
 
 st.set_page_config(
-    page_title="Baza zmajeva",
+    page_title="Zmajevi svijeta Westerosa",
     page_icon="🐉"
 )
 
-st.title("🐉 BAZA ZMAJEVA")
+st.title("🐉 ZMAJEVI SVIJETA WESTEROSA")
 
 st.write("Dobrodošli u bazu zmajeva iz svijeta Westerosa!")
 
