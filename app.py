@@ -29,22 +29,41 @@ st.set_page_config(
 st.markdown("""
 <style>
 
-/* Pozadina aplikacije */
+/* Pozadina cijele aplikacije */
 .stApp {
     background: linear-gradient(135deg, #0f0f0f, #2b1b1b);
     color: white;
 }
 
-/* Tamna pozadina tablica */
+/* Zlatni naslovi */
+h1, h2, h3 {
+    color: #f0d58c !important;
+}
+
+/* Tamnocrveni okvir tablice */
 [data-testid="stDataFrame"] {
-    background-color: #1a1a1a;
+    background-color: #3b1111;
+    border: 1px solid #6b2929;
     border-radius: 10px;
     padding: 5px;
 }
 
-/* Naslovi */
-h1, h2, h3 {
+/* Tamnocrvena unutrašnjost tablice */
+[data-testid="stDataFrame"] div[role="grid"] {
+    background-color: #3b1111 !important;
+    color: white !important;
+}
+
+/* Zaglavlje tablice */
+[data-testid="stDataFrame"] div[role="columnheader"] {
+    background-color: #561818 !important;
     color: #f0d58c !important;
+}
+
+/* Ćelije tablice */
+[data-testid="stDataFrame"] div[role="gridcell"] {
+    background-color: #3b1111 !important;
+    color: white !important;
 }
 
 </style>
