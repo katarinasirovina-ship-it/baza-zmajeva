@@ -66,6 +66,11 @@ h1, h2, h3 {
     color: white !important;
 }
 
+/* Svjetliji tekst uz polja i izbornike */
+[data-testid="stWidgetLabel"] p {
+    color: #f5e6c8 !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
