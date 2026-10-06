@@ -28,12 +28,28 @@ st.set_page_config(
 
 st.markdown("""
 <style>
+
+/* Pozadina aplikacije */
 .stApp {
     background: linear-gradient(135deg, #0f0f0f, #2b1b1b);
     color: white;
 }
+
+/* Tamna pozadina tablica */
+[data-testid="stDataFrame"] {
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+/* Naslovi */
+h1, h2, h3 {
+    color: #f0d58c !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
+
 st.title("🐉 ZMAJEVI SVIJETA WESTEROSA")
 
 st.write("Dobrodošli u bazu zmajeva iz svijeta Westerosa!")
