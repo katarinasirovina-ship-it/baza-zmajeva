@@ -71,6 +71,19 @@ h1, h2, h3 {
     color: #f5e6c8 !important;
 }
 
+/* Gumbi */
+.stButton > button {
+    background-color: #561818 !important;
+    color: #f0d58c !important;
+    border: 1px solid #f0d58c !important;
+    border-radius: 8px;
+}
+
+.stButton > button:hover {
+    background-color: #7a2222 !important;
+    color: white !important;
+}
+
 </style>
 """, unsafe_allow_html=True)
 
