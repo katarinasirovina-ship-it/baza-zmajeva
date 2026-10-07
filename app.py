@@ -85,7 +85,7 @@ st.write(
     "filtriranje, dodavanje, brisanje i sortiranje zmajeva."
 )
 
-# Učitavanje podataka iz Google Sheetsa
+
 podaci = worksheet.get_all_records()
 df = pd.DataFrame(podaci)
 
@@ -188,3 +188,41 @@ st.write(
     f"🔻 Najslabiji zmajevi (snaga {najmanja_snaga}): "
     + ", ".join(najslabiji["IME"].tolist())
 )
+
+
+st.subheader("🔥 Dracarys")
+
+if st.button("🐉 DRACARYS!"):
+    st.markdown(
+        """
+        <style>
+        @keyframes vatra {
+            0% {
+                transform: scale(0.5);
+                opacity: 0;
+            }
+            50% {
+                transform: scale(1.5);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        .dracarys {
+            text-align: center;
+            font-size: 60px;
+            animation: vatra 1s ease-in-out;
+        }
+        </style>
+
+        <div class="dracarys">
+            🔥🔥🔥🐉🔥🔥🔥
+            <br>
+            DRACARYS!
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
