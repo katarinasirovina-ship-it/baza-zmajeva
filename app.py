@@ -192,7 +192,7 @@ st.write(
 
 st.subheader("🔥 Dracarys")
 
-if st.button("🐉 DRACARYS!"):
+if st.button("Press the button"):
     st.markdown(
         """
         <style>
